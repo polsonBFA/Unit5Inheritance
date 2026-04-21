@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Main {
    public static void main(String[] args) {
       ArrayList<Money> piggyBank = new ArrayList<Money>();
@@ -12,11 +14,8 @@ class Main {
       double amount = 0;
       for (Money item : piggyBank)
       {
-        amount += item.getAmount();
+        amount += item.getValue();
       } 
-      System.out.println("The piggy bank holds $" + amount + ".");
-      System.out.println(piggyBank.get(2).equals(piggyBank.get(3)));
+      System.out.println("The piggy bank holds $" + amount + ".");   
   }
-  
-  
 }
